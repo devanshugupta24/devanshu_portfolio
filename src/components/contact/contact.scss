@@ -20,6 +20,8 @@
         @include mobile{
           margin-top: 130px;
       }
+
+      
        
 
         
@@ -32,6 +34,10 @@
             @include mobile{
               margin-top: 150px;
           }
+
+          @include tablet{
+            margin-top: 150px;
+        }
            
            
 
@@ -90,9 +96,11 @@
   
     .cSection:first-child {
       height: 70%;
+      width: 100%;
     }
     .cSection:last-child {
       height: 30%;
+      width: 100%;
     }
   }
 

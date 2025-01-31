@@ -7,20 +7,36 @@ const items=[
         id:1,
         title:"MediSync",
         img:"/MediSync.png",
-        desc:"Medisync is a docrtor appointment booking app"
+        demo:"https://medisync-frontend.onrender.com/",
+        github:"https://github.com/devanshugupta24/MediSync",
+        desc:"MediSync is an innovative platform connecting patients with trusted doctors. It simplifies appointment booking, offers personalized health management tools, and ensures secure access to healthcare. With features like digital records, and reminders, MediSync makes healthcare convenient and efficient to your needs."
     },
     {
-        id:2,
-        title:"Old-portfolio",
-        img:"/old_portfolio.png",
-        desc:"my old portfolio website very good"
+        id:4,
+        title:"New-portfolio",
+        img:"/new_portfolio.png",
+        demo:"",
+        github:"https://github.com/devanshugupta24/new_devanshu_portfolio",
+        desc:"I created a personal portfolio website using React.js, showcasing my expertise in web development. The site features a dynamic homepage, an organized skills section, an interactive projects showcase, and a contact form to get in touch with me. It's designed to be fully responsive, providing a seamless experience across all devices."
     },
     {
         id:3,
         title:"WeatherApp",
         img:"/weather.png",
-        desc:"a js project for determining a weather of any city"
+        demo:"https://weatherappclimate.netlify.app/",
+        github:"https://github.com/devanshugupta24/weatherapp",
+        desc:"Weather App that allows users to search for the weather of different cities. The app fetches real-time data using an API, providing users with the current weather conditions of their selected city. The app dynamically changes its image based on the temperature of the searched city, offering a visual representation of the weather."
     },
+    {
+        id:2,
+        title:"Old-portfolio",
+        img:"/old_portfolio.png",
+        demo:"https://devanshugupta24.netlify.app/",
+        github:"https://github.com/devanshugupta24/old_devanshu-portfolio",
+        desc:"A personal portfolio website using React.js to showcase my web development skills. It features responsive design, sections for skills, projects, and a contact form. The website highlights my ability to create user-friendly, interactive interfaces, and demonstrates my proficiency in modern front-end technologies."
+    },
+    
+    
     
 ]
 
@@ -44,7 +60,8 @@ const Single=({item})=>{
                     <motion.div className="textContainer" style={{y}} >
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button><a href={item.demo} target="_blank">See Demo</a></button>
+                        <button><a href={item.github} target="_blank">Github</a></button>
                     </motion.div>
                 </div>
             </div>

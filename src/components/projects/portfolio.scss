@@ -42,6 +42,8 @@
         height: 100%;
         overflow: hidden;
 
+        
+
         .wrapper{
             max-width: 1366px;
             height: 100%;
@@ -57,10 +59,7 @@
     
             }
 
-            @include tablet{
-                margin-left: 20px;
-    
-            }
+            
 
             .imageContainer{
                 flex:1;
@@ -82,6 +81,7 @@
 
                     @include mobile{
                         object-fit: contain;
+                        
             
                     }
                 }
@@ -92,7 +92,7 @@
                 flex:1;
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 20px;
 
                 @include mobile{
                     transform: none !important;
@@ -128,6 +128,8 @@
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
+                    font-size: 18px;
+                    
                 }
             }
         }
