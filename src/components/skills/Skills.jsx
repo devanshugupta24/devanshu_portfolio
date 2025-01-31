@@ -42,7 +42,7 @@ const Skills = () => {
       <div className="Wrapper">
         <div className="Title">Skills</div>
         <div className="desc">
-          Here are my skills on which I have been working on for the past 3 years
+          Here are few of my skills on which I have been working on
         </div>
         
         {/* Circular Motion applied to SkillsContainer */}
