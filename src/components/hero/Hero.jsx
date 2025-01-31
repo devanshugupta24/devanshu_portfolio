@@ -1,6 +1,6 @@
 import "./hero.scss"
 import {motion} from "framer-motion"
-
+import { Link } from "react-scroll";
 
 const textVariants={
     initial:{
@@ -47,10 +47,16 @@ const Hero = () => {
                 <motion.h2 variants={textVariants}>DEVANSHU GUPTA</motion.h2>
                 <motion.h1 variants={textVariants}>Web developer and Coder</motion.h1>
                 <motion.div variants={textVariants}  className="buttons">
-                    <motion.button variants={textVariants}>Download CV</motion.button>
-                    <motion.button variants={textVariants}>Contact me</motion.button>
+                    <motion.button variants={textVariants}>
+                        <a href="https://drive.google.com/file/d/1gEd4rnEYGewmYlmppSOtKOek8BawZdjc/view?usp=sharing" target="_blank">Download CV</a>
+                    </motion.button>
+                    <motion.button variants={textVariants}>
+                        <Link to="contact" smooth={true} duration={200}>
+                            Contact Me
+                        </Link>
+                    </motion.button>
                 </motion.div>
-                <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+                <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt=""  />
             </motion.div>
         </div>
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
