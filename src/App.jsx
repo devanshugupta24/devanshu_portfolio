@@ -18,8 +18,10 @@ const App = () => {
     <section id="Skills">
     <Skills/>
     </section>
-    
-      <Project/>
+    <div id="Projects">
+    <Project/>
+    </div>
+      
 
     <section id="Contact">
       <Contact/>

@@ -16,6 +16,10 @@
             padding:20px;
         }
 
+        @include tablet{
+            justify-content: space-around;
+        }
+
    
 
         span{
@@ -24,6 +28,10 @@
             @include mobile{
                 display: none;
             }
+
+            
+
+
             
         }
 
@@ -31,10 +39,15 @@
             display: flex;
             gap: 20px;
 
+            
+
             img{
                 width:24px;
                 height: 24px;
+
             }
+
+            
         }
     }
 }
