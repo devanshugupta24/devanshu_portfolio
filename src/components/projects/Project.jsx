@@ -15,7 +15,7 @@ const items=[
         id:4,
         title:"New-portfolio",
         img:"/new_portfolio.png",
-        demo:"",
+        demo:"https://devanshu-24.onrender.com",
         github:"https://github.com/devanshugupta24/new_devanshu_portfolio",
         desc:"I created a personal portfolio website using React.js, showcasing my expertise in web development. The site features a dynamic homepage, an organized skills section, an interactive projects showcase, and a contact form to get in touch with me. It's designed to be fully responsive, providing a seamless experience across all devices."
     },
