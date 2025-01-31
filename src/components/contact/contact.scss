@@ -1,0 +1,98 @@
+@import "../../app.scss";
+
+.contact{
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    background: linear-gradient(180deg, #111132,#0c0c1d,);
+
+    
+
+    .cSection{
+        width:50%;
+        height: 50%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile{
+          margin-top: 130px;
+      }
+       
+
+        
+
+        form{
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            @include mobile{
+              margin-top: 150px;
+          }
+           
+           
+
+            .formItem{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+
+
+                
+                input,textarea{
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                }
+
+                label{
+                    font-size: 13px;
+                }
+            }
+
+            button{
+                background-color: orange;
+                color:white;
+                padding: 20px;
+                border:none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .contact {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+     
+    }
+  
+    .cSection {
+      width: 100%;
+    }
+  
+    .cSection:first-child {
+      height: 70%;
+    }
+    .cSection:last-child {
+      height: 30%;
+    }
+  }
+
