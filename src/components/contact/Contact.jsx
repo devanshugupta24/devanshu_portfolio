@@ -17,7 +17,7 @@ const listVariant={
             staggerChildren:0.2,
         }
     }
-}
+}   
 
 const Contact = () => {
 
